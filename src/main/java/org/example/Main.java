@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Get Coordinates");
         System.out.print("How many addresses wana query? ");
         int n = sc.nextInt();
-
+        sc.nextLine();
         List<ShortAddress> list = new ArrayList<>();
 
         for (int i = 1; i <= n; i++) {
@@ -29,7 +29,7 @@ public class Main {
             //156 Av Rio Branco, Centro, Rio de Janeiro, 156, Brazil
 
             System.out.print("Write address wich you want consult (Public Place, District, City, NumberPLace, Country)");
-            sc.nextLine();
+
             String scshortaddress = sc.nextLine();
 
             ShortAddress shortAddress = new ShortAddress(scshortaddress);
